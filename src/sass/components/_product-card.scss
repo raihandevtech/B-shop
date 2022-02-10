@@ -1,0 +1,62 @@
+.product_card {
+  box-shadow: $box-shadow;
+  position: relative;
+  margin-bottom: 10px;
+  &_img {
+    @include flex-align(center);
+    overflow: hidden;
+    img {
+      cursor: pointer;
+      min-width: 100%;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      z-index: 555;
+      &:nth-child(1) {
+        left: 0;
+        transition: left 0.5s ease;
+      }
+      &:nth-child(2) {
+        right: 0;
+        transition: right 0.5s ease;
+      }
+    }
+    &:hover img {
+      &:nth-child(1) {
+        left: -100%;
+      }
+
+      &:nth-child(2) {
+        right: 100%;
+      }
+    }
+  }
+  &_content {
+    padding: 25px 15px;
+    &_ratting {
+      margin-bottom: 10px;
+    }
+    &_name {
+      margin-bottom: 10px;
+    }
+    &_price {
+      margin-bottom: 20px;
+      span {
+        &:nth-child(1) {
+          margin-right: 10px;
+        }
+      }
+    }
+    &_description {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    &_btn {
+      @include flex(center, center);
+    }
+  }
+}

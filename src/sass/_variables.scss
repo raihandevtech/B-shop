@@ -1,0 +1,52 @@
+$main-bg: #fff;
+$gray-bg: #d5d8d3e7;
+$gray-dark-bg: #96eb55e7;
+$brown-bg: #559c1a;
+$brown-light-bg: #a39a1b;
+$brown-dark-bg: #a57212;
+$brown-transparent-bg: rgba(190, 99, 14, 0.616);
+
+$img-bg: linear-gradient(
+  to right,
+  rgba(192, 130, 48, 0.63),
+  rgba(255, 255, 0, 0.884)
+);
+
+$main-color: #cce72e;
+
+$txt-main-color: #4d3131;
+$txt-second-color: #8d8d8d;
+$txt-White: #fff;
+
+$btn-main-bg: $main-color;
+$btn-main-color: $brown-bg;
+
+$str-bg: #ff6e0ee7;
+
+$border-main-color: rgb(230, 149, 134);
+
+$box-shadow: rgba(185, 166, 107, 0.62) 0px 0px 15px;
+
+$header-height: 100px;
+$header-tablet-height: 70px;
+$header-mobile-height: 40px;
+
+$mobile-width: 600px;
+$tablet-width: 1024px;
+
+$colors: (
+  "blue": #4267b2,
+  "orange": #fbb96b,
+  "pink": #fe7e73,
+  "white": #fff,
+  "black": #000,
+  "main": $main-color,
+  "red": #ff0000,
+);
+
+$small-screen: 640px;
+$medium-screen: 768px;
+$large-screen: 1024px;
+$extra-large-screen: 1280px;
+
+$numbers: (0, 1, 2, 3, 4, 5, 6, 7, 8);

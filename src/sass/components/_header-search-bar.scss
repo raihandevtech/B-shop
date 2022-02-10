@@ -1,0 +1,85 @@
+.search_bar_bg {
+  background-color: $brown-light-bg;
+}
+
+.header_search-bar {
+  @include flex(center, space-between);
+  padding: 0 20px;
+  &_logo {
+    height: 60px;
+    img {
+      max-height: 100%;
+    }
+  }
+  &_input {
+    display: none;
+    @include small {
+      display: flex;
+    }
+    flex-grow: 1;
+    position: relative;
+    margin: 0 45px;
+    input {
+      height: 38px;
+      width: 100%;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      padding-left: 12px;
+      padding-right: 54px;
+      font-size: 15px;
+      color: $txt-main-color;
+    }
+    .search-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 46px;
+      height: 38px;
+      background: $btn-main-bg;
+      border-radius: 0 5px 5px 0;
+      @include flex(center, center);
+      .icon {
+        font-size: 28px;
+        color: $txt-main-color;
+      }
+    }
+  }
+  &_user {
+    @include flex-align(center);
+    .user-name {
+      @include flex-align(center);
+      margin-right: 35px;
+      cursor: pointer;
+      .icon {
+        font-size: 28px;
+        color: $txt-main-color;
+      }
+      p {
+        color: $txt-main-color;
+        margin-top: 2px;
+      }
+    }
+    .cart {
+      @include flex-align(center);
+      position: relative;
+      cursor: pointer;
+      span {
+        position: absolute;
+        padding: 4px;
+        background: $btn-main-bg;
+        font-size: 12px;
+        min-width: 22px;
+        border-radius: 50%;
+        top: -8px;
+        right: -12px;
+        text-align: center;
+      }
+      .icon {
+        font-size: 28px;
+        color: $txt-main-color;
+      }
+    }
+  }
+}

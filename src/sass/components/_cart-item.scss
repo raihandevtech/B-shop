@@ -1,0 +1,87 @@
+.cart_item {
+  margin-left: 20px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid $border-main-color;
+  @include large {
+    @include flex-align(center);
+    margin-bottom: 15px;
+    border-bottom: none;
+  }
+  @include flex(flex-start, flex-start);
+  &_image {
+    width: 180px;
+    img {
+      min-width: 100%;
+      margin-bottom: 10px;
+    }
+    @include large {
+      margin-bottom: 0;
+      margin-bottom: 0px;
+    }
+  }
+  &_info {
+    margin-left: 20px;
+    @include large {
+      @include flex(center, space-between);
+    }
+    &_name {
+      margin-bottom: 10px;
+    }
+    &_price {
+      margin-bottom: 10px;
+    }
+    &_quantity {
+      margin-bottom: 10px;
+    }
+    &_del {
+      margin-bottom: 10px;
+    }
+    @include large {
+      &_name {
+        margin-bottom: 0px;
+      }
+      &_price {
+        margin-bottom: 0px;
+      }
+      &_quantity {
+        margin-bottom: 0px;
+      }
+      &_del {
+        margin-bottom: 0px;
+      }
+    }
+
+    flex-grow: 1;
+    font-weight: 500;
+    &_quantity {
+      @include flex-align(center);
+      &_btn {
+        cursor: pointer;
+        border: 2px solid $border-main-color;
+        width: 22px;
+        height: 22px;
+        position: relative;
+        .icon {
+          position: absolute;
+          top: -1px;
+          right: -1px;
+        }
+      }
+      &_input {
+        min-width: 60px;
+        height: 22px;
+        border: 2px solid $border-main-color;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        padding: 0 4px;
+      }
+    }
+    &_del {
+      cursor: pointer;
+      .icon {
+        font-size: 24px;
+      }
+    }
+  }
+}

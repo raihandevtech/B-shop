@@ -1,0 +1,37 @@
+.header_top_bg {
+  display: none;
+  background-color: $brown-transparent-bg;
+  @include small {
+    display: block;
+  }
+}
+.header_top {
+  padding: 6px 16px;
+  @include flex(center, space-between);
+  &_left {
+    &_contact {
+      @include flex(center, center);
+      &_item {
+        display: flex;
+        align-items: center;
+        margin-right: 18px;
+        color: $txt-main-color;
+        .icon {
+          font-size: 18px;
+          margin-right: 8px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &_right {
+    &_social {
+      .icon {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

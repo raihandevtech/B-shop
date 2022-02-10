@@ -1,0 +1,63 @@
+.catalog {
+  margin-top: -40px;
+  @include small {
+    @include flex(flex-start, flex-start);
+    flex-direction: row;
+  }
+  flex-direction: column;
+  &_filter {
+    width: 100%;
+    @include small {
+      width: 30%;
+    }
+    @include large {
+      width: 20%;
+    }
+    @include extra-large {
+      width: 25%;
+    }
+
+    box-shadow: $box-shadow;
+    margin-right: 20px;
+    padding: 20px;
+    @include small {
+      padding: 10px;
+    }
+    @include large {
+      padding: 20px;
+    }
+
+    padding-bottom: 30px;
+    &_widget {
+      margin-bottom: 30px;
+      &_title {
+        font-size: 22px;
+        margin-bottom: 10px;
+        @include small {
+          font-size: 18px;
+        }
+        @include extra-large {
+          font-size: 22px;
+        }
+      }
+      &_content {
+        margin-left: 10px;
+        &_item {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+  &_content {
+    width: 100%;
+    @include small {
+      width: 70%;
+    }
+    @include large {
+      width: 80%;
+    }
+    @include extra-large {
+      width: 75%;
+    }
+  }
+}

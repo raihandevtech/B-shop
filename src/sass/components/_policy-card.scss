@@ -1,0 +1,28 @@
+.policy_card {
+  box-shadow: $box-shadow;
+  padding: 15px 20px;
+  height: 85px;
+  @include flex-align(center);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    margin-top: -4px;
+  }
+  &_icon {
+    margin-right: 20px;
+    .icon {
+      font-size: 34px;
+    }
+  }
+  &_info {
+    &_name {
+      margin-bottom: 5px;
+    }
+    &_description {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}

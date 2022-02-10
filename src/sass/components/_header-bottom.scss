@@ -1,0 +1,47 @@
+.header_bottom_bg {
+  background: $brown-dark-bg;
+}
+.header_bottom {
+  padding: 0px 20px;
+  @include medium {
+    padding: 8px 20px;
+  }
+  @include flex-align(center);
+  &_bar {
+    @include flex-align(center);
+    color: $txt-White;
+    margin-right: 20px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    .icon {
+      font-size: 24px;
+      margin-right: 5px;
+    }
+    p {
+      margin-top: 2px;
+    }
+    &:hover p {
+      text-decoration: underline;
+    }
+  }
+  &_categorys {
+    opacity: 0;
+    visibility: hidden;
+
+    @include large {
+      opacity: 1;
+      visibility: visible;
+    }
+    @include flex-align(center);
+    color: $txt-White;
+    p {
+      cursor: pointer;
+      margin-top: 2px;
+      margin-right: 12px;
+      transition: 0.3s ease-in;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

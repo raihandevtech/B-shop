@@ -1,0 +1,8 @@
+.product_ratting {
+  color: $str-bg;
+  @include flex-align(center);
+  position: relative;
+  &_full {
+    position: absolute;
+  }
+}
