@@ -14,7 +14,6 @@ function HeroSlider(props) {
   const nextSlide = useCallback(() => {
     const index = activeSlide + 1 === data.length ? 0 : activeSlide + 1;
     setActiveSlide(index);
-    console.log("hello");
   }, [activeSlide, data]);
 
   const prevSlide = () => {
