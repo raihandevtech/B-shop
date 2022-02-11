@@ -9,7 +9,7 @@ import Cart from "../pages/Cart";
 
 function Layout() {
   return (
-    <div className="">
+    <div className="over_flow">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
