@@ -30,13 +30,19 @@
         margin-right: 10px;
         order: 2;
         &_item {
+          margin-top: 10px;
           margin-bottom: 5px;
+          width: 50%;
+          @include large {
+            width: 100%;
+            margin-top: 0px;
+          }
           img {
             width: 100%;
           }
         }
         &_item:nth-child(1) {
-          margin-right: 25px;
+          margin-right: 15px;
         }
         @include large {
           &_item:nth-child(1) {

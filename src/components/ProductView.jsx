@@ -132,9 +132,11 @@ function ProductView({ product }) {
             <div className="regular_price">
               ${numberWithCommas(product.price)}
             </div>
-            <div className="old_price">
-              <del>${numberWithCommas(product.oldPrice)}</del>
-            </div>
+            {product.oldprice && (
+              <div className="old_price">
+                <del>${numberWithCommas(product.oldPrice)}</del>
+              </div>
+            )}
           </div>
           <div className="product_info_colors">
             <h3>Color</h3>
