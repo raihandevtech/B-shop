@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Product from "../pages/Product";
 import Catalog from "../pages/Catalog";
 import Cart from "../pages/Cart";
+import ProductViewModal from "./ProductViewModal";
 
 function Layout() {
   return (
@@ -22,6 +23,7 @@ function Layout() {
         </Routes>
       </div>
       <Footer />
+      <ProductViewModal />
     </div>
   );
 }

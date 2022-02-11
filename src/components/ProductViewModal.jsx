@@ -16,6 +16,12 @@ const ProductViewModal = () => {
 
   const [product, setProduct] = useState(undefined);
 
+  if (productSlug !== null) {
+    document.body.classList.add("ver_height");
+  } else {
+    document.body.classList.remove("ver_height");
+  }
+
   useEffect(() => {
     setProduct(productData.getProductBySlug(productSlug));
   }, [productSlug]);
@@ -25,8 +31,8 @@ const ProductViewModal = () => {
       className={`product_view_modal ${product === undefined ? "" : "active"}`}
     >
       <div className="product_view_modal_content">
-        <div className="container">
-          <ProductView product={product} />
+        <div className="container product_view">
+          <ProductView product={product} deshide />
         </div>
         <div className="product_view_modal_content_close">
           <Button size="sm" onClick={() => dispatch(remove())}>

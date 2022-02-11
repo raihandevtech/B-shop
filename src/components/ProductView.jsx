@@ -12,7 +12,7 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../redux/shopping-cart/cartItemsSlide";
 import { remove } from "../redux/product-modal/productModalSlice";
 
-function ProductView({ product }) {
+function ProductView({ product, deshide }) {
   let navigate = useNavigate();
 
   const dispatch = useDispatch();
@@ -200,7 +200,7 @@ function ProductView({ product }) {
           </div>
         </div>
       </div>
-      <div className="product_desc">
+      <div className={`product_desc ${deshide && "deshide"}`}>
         <p className={`${hideDesc && "hide"}`}>{product.description}</p>
         <div className={`read_more ${!hideDesc && "hide_btn"}`}>
           <p onClick={ReadMoreHandler}>Read More...</p>

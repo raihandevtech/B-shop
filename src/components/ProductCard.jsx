@@ -56,16 +56,14 @@ function ProductCard({
         </div>
 
         <div className="product_card_content_btn">
-          <Link to={`/catalog/${slug}`}>
-            <Button
-              size="sm"
-              icon={AddShoppingCartIcon}
-              animate={true}
-              onClick={() => dispatch(set(slug))}
-            >
-              choose to buy
-            </Button>
-          </Link>
+          <Button
+            size="sm"
+            icon={AddShoppingCartIcon}
+            animate={true}
+            onClick={() => dispatch(set(slug))}
+          >
+            choose to buy
+          </Button>
         </div>
       </div>
     </div>

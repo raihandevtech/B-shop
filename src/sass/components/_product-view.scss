@@ -171,12 +171,12 @@
         .btn {
           margin-right: 10px;
           margin-bottom: 15px;
-          @include large {
-            margin-bottom: 0;
-          }
         }
       }
     }
+  }
+  .deshide {
+    display: none;
   }
   &_desc {
     margin: 30px 0px;
